@@ -1,0 +1,66 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "cider-controller",
+  "title": "Cider",
+  "description": "This plugin is a controller for Cider, a community-driven Apple Music client.",
+  "icon": "command-icon.png",
+  "author": "Amaru",
+  "categories": [
+    "Productivity"
+  ],
+  "keywords": [
+    "cider",
+    "music"
+  ],
+  "license": "MIT",
+  "commands": [
+    {
+      "name": "play",
+      "title": "Play",
+      "description": "Start playback in Cider",
+      "mode": "no-view"
+    },
+    {
+      "name": "pause",
+      "title": "Pause",
+      "description": "Pause playback in Cider",
+      "mode": "no-view"
+    },
+    {
+      "name": "playpause",
+      "title": "Toggle Play/Pause",
+      "description": "Toggle between play and pause",
+      "mode": "no-view"
+    },
+    {
+      "name": "next",
+      "title": "Next Song",
+      "description": "Skip to the next song in the queue",
+      "mode": "no-view"
+    },
+    {
+      "name": "previous",
+      "title": "Previous Song",
+      "description": "Go back to the previous song in the queue",
+      "mode": "no-view"
+    }
+  ],
+  "dependencies": {
+    "@raycast/api": "^1.37.1",
+    "node-fetch": "^3.2.10"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "@typescript-eslint/parser": "^5.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "prettier": "^2.5.1",
+    "typescript": "^4.4.3"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint"
+  }
+}
